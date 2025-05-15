@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Finalizar laboratório de informática 8",
+        "prioridade": "alta",
+        "prazo": "2025-04-30",
+        "categoria": "trabalho"
+    },
+    {
+        "nome": "Merendar 5 pães",
+        "prioridade": "alta",
+        "prazo": "2025-04-29",
+        "categoria": "trabalho"
+    },
+    {
+        "nome": "Casar com a Everlyn",
+        "prioridade": "média",
+        "prazo": "2026-01-01",
+        "categoria": "pessoal"
+    }
+]

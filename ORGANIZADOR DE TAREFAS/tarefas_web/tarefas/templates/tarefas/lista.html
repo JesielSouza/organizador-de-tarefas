@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Minhas Tarefas</title></head>
+<body>
+    <a href="{% url 'nova_tarefa' %}" class="btn btn-success mb-3">+ Nova Tarefa</a>
+    <h2>Olá, {{ user.username }}!</h2>
+    <a href="{% url 'logout' %}">Sair</a>
+    <h3>Suas Tarefas:</h3>
+    <ul>
+        {% for tarefa in tarefas %}
+            <li>
+                <strong>{{ tarefa.nome }}</strong> — 
+                Prioridade: {{ tarefa.prioridade }} — 
+                Prazo: {{ tarefa.prazo }} — 
+                Categoria: {{ tarefa.categoria }}
+            </li>
+        {% empty %}
+            <li>Você não tem tarefas cadastradas.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
