@@ -1,0 +1,3 @@
+import autenticacao
+
+autenticacao.executar()
