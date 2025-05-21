@@ -3,5 +3,10 @@
         "email": "jesielcosta13@hotmail.com",
         "login": "Jesiel",
         "senha": "$2b$12$z.BFV10174OdTs6iSHMn6.eEDO5SwPHSk9WZemhJNDlygWo8P3zzu"
+    },
+    {
+        "email": "unip@unip.com.br",
+        "login": "Unip",
+        "senha": "$2b$12$qLBzy6TpZ6h0wWYj.fCCausyxmgHmVkEpoaSdGcBj0LHrH6MF2B92"
     }
 ]
