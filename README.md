@@ -1,15 +1,16 @@
-# Organizador de Tarefas com Django 🗂️
+# Organizador de Tarefas com Flask 🗂️
 
-Este é um projeto de aplicação web para gerenciamento de tarefas pessoais com autenticação de usuário, desenvolvido com Django e Bootstrap.
+Este é um projeto de aplicação web para gerenciamento de tarefas pessoais com autenticação de usuário, desenvolvido com **Flask**, **Bootstrap** e persistência em **JSON**.
 
 ## 🔧 Funcionalidades
 
-- Login e logout de usuários
-- Cada usuário vê apenas suas tarefas
-- Cadastro de novas tarefas
-- Filtro por categoria
-- Interface responsiva com Bootstrap
-- Em desenvolvimento contínuo
+- Cadastro e login de usuários com senha criptografada (bcrypt)
+- Cada usuário tem seu próprio arquivo de tarefas
+- Cadastro de novas tarefas com formulário
+- Visualização de tarefas por usuário
+- Logout de sessão
+- Interface moderna com Bootstrap
+- Em constante evolução
 
 ## 🚀 Como rodar o projeto localmente
 
@@ -20,7 +21,7 @@ git clone https://github.com/SeuUsuario/organizador-de-tarefas.git
 cd organizador-de-tarefas
 ```
 
-2. Crie um ambiente virtual (opcional, mas recomendado):
+2. (Opcional) Crie um ambiente virtual:
 
 ```bash
 python -m venv venv
@@ -34,33 +35,28 @@ venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 ```
 
-4. Rode as migrações e crie o superusuário:
+4. Execute o servidor Flask:
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+python app.py
 ```
 
-5. Inicie o servidor:
+5. Acesse no navegador:
 
-```bash
-python manage.py runserver
 ```
-
-6. Acesse no navegador: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+http://localhost:5000
+```
 
 ## 📁 Estrutura do Projeto
 
-- `tarefas/` - App principal
-- `tarefas_web/` - Configurações do Django
-- `templates/` - Interface HTML com Bootstrap
-- `cadastro.json` - Arquivo legado (versão terminal)
-- `lista_corrigida.py` - Script legado (versão terminal)
+- `app.py` — Arquivo principal com as rotas Flask
+- `usuarios.json` — Armazena os usuários cadastrados
+- `tarefas_<usuario>.json` — Arquivo separado por usuário
+- `templates/` — Contém os arquivos HTML (login, cadastro, nova tarefa, lista)
 
 ## 📌 Observações
 
-Este projeto nasceu como um organizador de tarefas via terminal com JSON e evoluiu para uma aplicação web usando Django. Alguns arquivos da versão anterior foram mantidos como referência.
+Este projeto começou como uma aplicação em terminal e evoluiu para um sistema web simples e funcional usando Flask e Bootstrap.
 
 ## 📜 Licença
 

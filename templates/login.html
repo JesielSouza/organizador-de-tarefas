@@ -32,17 +32,17 @@
     <div class="card shadow-sm">
       <div class="card-body">
         <h3 class="card-title text-center mb-4">Entrar</h3>
-        <form>
+        <form method="post">
           <div class="mb-3">
             <label for="login" class="form-label">Usuário</label>
-            <input type="text" class="form-control" id="login" placeholder="Digite seu usuário">
+            <input type="text" class="form-control" name="login" required placeholder="Digite seu usuário">
           </div>
           <div class="mb-3">
             <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            <input type="password" class="form-control" name="senha" required placeholder="Digite sua senha">
           </div>
           <div class="cadastro-block"> 
-            <p class="cadastro-link"> Não tem cadastro? <a href="cadastro.html" class="link-info">Cadastrar usuário</a></p>
+            <p class="cadastro-link"> Não tem cadastro? <a href="{{ url_for('cadastrar') }}" class="link-info">Cadastrar usuário</a></p>
           </div>
           <div class="d-grid">
             <button type="submit" class="btn btn-primary">Entrar</button>

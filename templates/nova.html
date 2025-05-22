@@ -23,18 +23,18 @@
     <div class="card shadow-sm">
       <div class="card-body">
         <h3 class="card-title mb-4 text-center">Adicionar Nova Tarefa</h3>
-        <form>
+        <form method="post">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome da Tarefa</label>
-            <input type="text" class="form-control" id="nome" placeholder="Ex: Estudar Python">
+            <input type="text" class="form-control" name="nome" required placeholder="Ex: Estudar Python">
           </div>
           <div class="mb-3">
             <label for="prazo" class="form-label">Prazo</label>
-            <input type="date" class="form-control" id="prazo">
+            <input type="date" class="form-control" name="prazo" required>
           </div>
           <div class="mb-3">
             <label for="prioridade" class="form-label">Prioridade</label>
-            <select class="form-select" id="prioridade">
+            <select class="form-select" name="prioridade" required>
               <option value="">Selecione</option>
               <option value="alta">Alta</option>
               <option value="media">Média</option>
@@ -43,7 +43,7 @@
           </div>
           <div class="mb-3">
             <label for="categoria" class="form-label">Categoria</label>
-            <input type="text" class="form-control" id="categoria" placeholder="Ex: Estudo, Trabalho, etc.">
+            <input type="text" class="form-control" name="categoria" required placeholder="Ex: Estudo, Trabalho, etc.">
           </div>
           <div class="d-grid">
             <button type="submit" class="btn btn-primary">Salvar Tarefa</button>

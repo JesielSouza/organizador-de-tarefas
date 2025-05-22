@@ -23,25 +23,25 @@
     <div class="card shadow-sm">
       <div class="card-body">
         <h3 class="card-title text-center mb-4">Criar Conta</h3>
-        <form>
+        <form method="post">
           <div class="mb-3">
             <label for="usuario" class="form-label">Nome de Usuário</label>
-            <input type="text" class="form-control" id="usuario" placeholder="Escolha um nome de usuário">
+            <input type="text" class="form-control" name="login" required placeholder="Escolha um nome de usuário">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            <input type="email" class="form-control" name="email" required placeholder="Digite seu e-mail">
           </div>
           <div class="mb-3">
             <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" placeholder="Crie uma senha forte">
+            <input type="password" class="form-control" name="senha" required placeholder="Crie uma senha forte">
           </div>
           <div class="mb-3">
             <label for="confirmar" class="form-label">Confirmar Senha</label>
-            <input type="password" class="form-control" id="confirmar" placeholder="Repita a senha">
+            <input type="password" class="form-control" name="senha" required placeholder="Repita a senha">
           </div>
           <div class="d-grid">
-            <button type="submit" class="btn btn-success">Cadastrar</button>
+            <button href="/login" type="submit" class="btn btn-success">Cadastrar</button>
           </div>
         </form>
       </div>
