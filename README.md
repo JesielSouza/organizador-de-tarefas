@@ -17,7 +17,7 @@ Este é um projeto de aplicação web para gerenciamento de tarefas pessoais com
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SeuUsuario/organizador-de-tarefas.git
+git clone https://github.com/JesielSouza/organizador-de-tarefas.git
 cd organizador-de-tarefas
 ```
 
